@@ -128,3 +128,19 @@ navbtn.addEventListener("click", () => {
   navlist.classList.toggle("active-head");
   navbtn.classList.toggle("active-navbtn");
 });
+
+
+// lightbox
+
+function openLightbox(imageSrc) {
+  var lightbox = document.getElementById('lightbox');
+  var lightboxImg = document.getElementById('lightboxImg');
+  lightbox.style.display = 'block';
+  lightboxImg.src = imageSrc;
+}
+
+function closeLightbox() {
+  var lightbox = document.getElementById('lightbox');
+  lightbox.style.display = 'none';
+}
+
